@@ -1,12 +1,12 @@
 Install Dependencies:
-!pip install patchify
-!pip install keras
-!pip install keras-unet
-!pip install kaggle
-!pip install gitpython
-
+ !pip install patchify
+ !pip install keras
+ !pip install keras-unet
+ !pip install kaggle
+ !pip install gitpython
+ 
 NNI Installation Instructions:
-How to Open NNI’s Web UI on Google Colab¶
+How to Open NNI’s Web UI on Google Colab
 1. Install required packages and softwares.
 ! pip install nni # install nni
 ! wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip # download ngrok and unzip it
