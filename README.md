@@ -20,4 +20,4 @@ Check the public url.
 You will see an url like http://xxxx.ngrok.io after step 4, open this url and you will find NNI’s Web UI. Have fun :)
 
 
-![](CS301/NNI.png?raw=true "NNI")
+![NNI](NNI.png?raw=true "NNI")
