@@ -1,3 +1,10 @@
+Install Dependencies:
+!pip install patchify
+!pip install keras
+!pip install keras-unet
+!pip install kaggle
+!pip install gitpython
+
 NNI Installation Instructions:
 How to Open NNI’s Web UI on Google Colab¶
 1. Install required packages and softwares.
@@ -17,8 +24,6 @@ get_ipython().system_raw('./ngrok http 8746 &')
 4. Check the public url.
 ! curl -s http://localhost:4040/api/tunnels # don't change the port number 4040
 You will see an url like http://xxxx.ngrok.io after step 4, open this url and you will find NNI’s Web UI. Have fun :)
-
-
 
 
 ![NNI](NNI.png?raw=true "NNI")
