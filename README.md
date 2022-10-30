@@ -1,5 +1,5 @@
 
-Install Dependencies:
+Install Dependencies: <br>
   !pip install patchify <br>
   !pip install keras <br>
   !pip install keras-unet <br>
