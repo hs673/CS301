@@ -1,10 +1,10 @@
 
 Install Dependencies:
-  !pip install patchify
-  !pip install keras
-  !pip install keras-unet
-  !pip install kaggle
-  !pip install gitpython
+  !pip install patchify <br>
+  !pip install keras <br>
+  !pip install keras-unet <br>
+  !pip install kaggle <br>
+  !pip install gitpython <br>
  
 NNI Installation Instructions:
 How to Open NNI’s Web UI on Google Colab
