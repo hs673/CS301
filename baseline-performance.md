@@ -11,5 +11,5 @@ Our last attempt is shown in the images and graphs below. In our training and va
 # ![validationset1](val1.png?raw=true "segmentedimages") 
 # ![validationset2](val2.png?raw=true "segmentedimages") 
 # ![validationset3](val3.png?raw=true "segmentedimages") 
-# ![validationset4](val.png?raw=true "segmentedimages") 
+# ![validationset4](val4.png?raw=true "segmentedimages") 
 # ![tvgraphs](tvgraphs.png?raw=true "trainingvalidationgraphs") 
