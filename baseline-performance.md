@@ -1,14 +1,15 @@
-In this project, we are using Unet to train our model to predict accurate segmented images of satellite photos. There are six classes with which each satellite photo can be annotated that includes Buildings, Land, Road, Vegetation, Water, and Unlabeled. Each class has their own visual representaton on the photo with a unique color overlay. This model is fed 72 pictures from the training set that are already populated with the color overlay.After using Unet to generate the model, we tested the model against the validation set. 
+In this project, we are using Unet to train our model to predict accurate segmented images of satellite photos. 
+
+There are six classes with which each satellite photo can be annotated that includes Buildings, Land, Road, Vegetation, Water, and Unlabeled. Each class has their own visual representaton on the photo with a unique color overlay. Each image in the training and validation sets is cropped to reformat them into patches of 256x256x3.  This model is fed 72 pictures from the training set that are already populated with the color overlay. After using Unet to generate the model, we tested the model against the validation set. 
 
 Validation loss indicates how well the model fits new data while training loss indicates how well the model is fitting the training data. 
 
-According to the Training and Validation Loss graph, after around 30 epochs, the validation loss becomes significantly greater than the training loss. A high validation loss may that the model is not predicting the satellite test image accurately and will produce many errors. The decreasing training loss values are a result of the model's recall because it is seeing the same 72 images over again in the training stage. The higher validation loss than training loss means that the model is underfitting the new data and was not trained with enough data to accurately predict the segmentation of new test images.
+In our first attempt at the model, the satellite image, the training label, and the model-generated segmented image did not match up to each other as a result of incorrect file sorting. In our training and validation loss graph, the validation loss became significantly greater than the training loss indicating that our model was underfitting the images. In our training and validation IoU graph, the validation IoU had a low value hovering around .21 also indicating that the model does not accurately predict tte new test images. We fixed the path of the images using images.sort after listing all the images in the subdirectory and were able to get more accurate results in our last attempt.
 
-In the Training and Validation IoU graph, the validation IoU has a low value hovering around .21 also indicating that the model does not accurately predict the new test images. The model is seeing the same images again in the training set which is the reason for why the training IoU increases as the model goes through the epochs. 
+Our last attempt is shown in the images and graphs below. In our training and validation loss graph, the validation loss is greater than the training loss after around 20 epochs and stays stagnant. This is may be due to the lack of new training data due to the repetition of the training set images.
 
 # ![validationset1](validationset1.png?raw=true "segmentedimages") 
 # ![validationset2](validationset2.png?raw=true "segmentedimages") 
 # ![validationset3](validationset3.png?raw=true "segmentedimages") 
 # ![validationset4](validationset4.png?raw=true "segmentedimages") 
-# ![tvloss](tvloss.png?raw=true "trainingvalidationloss") 
-# ![tvIoU](tvIoU.png?raw=true "trainingvalidationIoU") 
+# ![tvgraphs](tvgraphs.png?raw=true "trainingvalidationgraphs") 
