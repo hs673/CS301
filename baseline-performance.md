@@ -8,8 +8,8 @@ In our first attempt at the model, the satellite image, the training label, and 
 
 Our last attempt is shown in the images and graphs below. In our training and validation loss graph, the validation loss is greater than the training loss after around 20 epochs and stays stagnant. This is may be due to the lack of new training data due to the repetition of the training set images.
 
-# ![validationset1](validationset1.png?raw=true "segmentedimages") 
-# ![validationset2](validationset2.png?raw=true "segmentedimages") 
-# ![validationset3](validationset3.png?raw=true "segmentedimages") 
-# ![validationset4](validationset4.png?raw=true "segmentedimages") 
+# ![validationset1](val1.png?raw=true "segmentedimages") 
+# ![validationset2](val2.png?raw=true "segmentedimages") 
+# ![validationset3](val3.png?raw=true "segmentedimages") 
+# ![validationset4](val.png?raw=true "segmentedimages") 
 # ![tvgraphs](tvgraphs.png?raw=true "trainingvalidationgraphs") 
