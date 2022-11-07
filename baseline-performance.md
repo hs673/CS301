@@ -1,9 +1,11 @@
-According to the Training and Validation Loss graph, after around 30 Epochs, the validation loss becomes significantly greater than the training loss. Validation loss indicates how well the model fits new data, and a high validation loss means that the model is not predicting the satellite test image well. Training loss indicates how well the model is fitting training data, a high training loss meaning that the model does not predict the training data well. The higher validation loss than training loss means that the model is underfitting and was not trained enough to accurately predict the new test images.
+In this project, we are using Unet to train our model to predict an accurate segmented image of a satellite photo. There are six classes which each satellite photo can be annotated with that include Buildings, Land, Road, Vegetation, Water, and Unlabeled. Each class has their own visual representaton on the photo with a unique color overlay. This model is fed 72 pictures of the testing label that are already populated with the color overlay.
 
-In the Training and Validation IoU graph, the validation IoU has a low value hovering around .2 also indicating that the model does not accurately predict the new test images.
+After using Unet to generate a model, we tested the model against the training set and against the validation set. Validation loss indicates how well the model fits new data while training loss indicates how well the model is fitting the training data. Loss si 
 
+According to the Training and Validation Loss graph, after around 30 Epochs, the validation loss becomes significantly greater than the training loss. A high validation loss means that the model is not predicting the satellite test image well. The decreasing training loss values are a result of the model's recall because it is seeing the same 72 images again. The higher validation loss than training loss means that the model is underfitting and was not trained with enough data to accurately predict the new test images.
 
-# picture
+In the Training and Validation IoU graph, the validation IoU has a low value hovering around .2 also indicating that the model does not accurately predict the new test images. The training set is seeing the same images again which is the reason why IoU increases as the model goes through the epochs. 
+
 # ![validationset1](validationset1.png?raw=true "segmentedimages") 
 # ![validationset2](validationset2.png?raw=true "segmentedimages") 
 # ![validationset3](validationset3.png?raw=true "segmentedimages") 
