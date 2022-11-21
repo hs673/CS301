@@ -3,3 +3,5 @@ The evolution method uses the search space to intialize random populations of si
 To incorporate hyperparameter optimization on our dataset, we used the NNI API to implement the evolution method. We created a search space for our hyperparameters that defines the learning rate, optimizers, weights, population size, and batch size. A configure file was created to specify the evolution tuner and the trial code. The NNI trial was not able to run because it ran out of memory even with a reduced search space.
 
 https://drive.google.com/drive/folders/1zoaXg-XTgLHMLKDEtaluBjiPK4_VwA7y?usp=sharing
+
+# ![nni_error](nni_error.png?raw=true "nni_error") 
