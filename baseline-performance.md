@@ -1,3 +1,5 @@
+Contributors: Guilherme Vilatoro Taglianeti, Hwa-Lyang Sugihara 
+
 In this project, we are using Unet to train our model to predict accurate segmented images of satellite photos. 
 
 There are six classes with which each satellite photo can be annotated that includes Buildings, Land, Road, Vegetation, Water, and Unlabeled. Each class has their own visual representaton on the photo with a unique color overlay. Each image in the training and validation sets is cropped to reformat them into patches of 256x256x3.  This model is fed 72 pictures from the training set that are already populated with the color overlay. After using Unet to generate the model, we tested the model against the validation set. 
